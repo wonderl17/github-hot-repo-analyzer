@@ -1,0 +1,16 @@
+name = "github-hot-repo-analyzer-api"
+main = "worker/src/index.ts"
+compatibility_date = "2026-05-18"
+
+[vars]
+REPORT_TIMEZONE = "Asia/Hong_Kong"
+REPORT_REPO_COUNT = "10"
+REPORT_CACHE_TTL_SECONDS = "1209600"
+REPO_ANALYSIS_CACHE_TTL_SECONDS = "2592000"
+REPO_FILE_SAMPLE_LIMIT = "24"
+OPENAI_MODEL = "gpt-4.1-mini"
+
+[[kv_namespaces]]
+binding = "DAILY_REPORT_CACHE"
+id = "REPLACE_WITH_KV_NAMESPACE_ID"
+preview_id = "REPLACE_WITH_PREVIEW_KV_NAMESPACE_ID"
